@@ -1,23 +1,25 @@
 {
-	"name": "backend",
-	"version": "1.0.0",
-	"description": "Node-Express REST Web API / Web Server back-end for Javascript MERN stack blog app",
-	"main": "index.js",
-	"type": "module",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "MS Manawadu",
-	"license": "ISC",
-	"dependencies": {
-		"express": "^4.18.2"
-	},
-	"devDependencies": {
-		"eslint": "^8.43.0",
-		"eslint-config-airbnb-base": "^15.0.0",
-		"eslint-config-prettier": "^8.8.0",
-		"eslint-plugin-import": "^2.27.5",
-		"eslint-plugin-prettier": "^4.2.1",
-		"prettier": "^2.8.8"
-	}
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Node-Express REST Web API / Web Server back-end for Javascript MERN stack blog app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js"
+  },
+  "author": "MS Manawadu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.8"
+  }
 }
