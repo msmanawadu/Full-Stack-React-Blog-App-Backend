@@ -11,20 +11,23 @@ npm start
 
 This Node-Express REST Web API / Web Server runs on URL [http://localhost:8000](http://localhost:8000)
 
-There are <number_of_api_routing_endpoints> routes:
+There are 3 routes:
 
-- http://localhost:8000/ - Root endpoint
-  TBD...
+- GET http://localhost:8000/api/articles/:name - Get a specific article.
+- POST http://localhost:8000/api/articles/:name/comments - Create a comment for an article.
+- PUT http://localhost:8000/api/articles/:name/upvote - Upvote for an article.
 
 The REST Web API transacts with a MongoDB database server for database CRUD operations.
 
-The MongoDB database server is configured to run on ...TBD
+The MongoDB database server is configured to run on [mongodb://127.0.0.1:27017](mongodb://127.0.0.1:27017)
+
+The REST Web API utilizes the native MongoDB database driver for Node.js as the database middleware to perform database CRUD operations with the MongoDB database.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run dev`
 
 Starts the Node-Express REST Web API / Web Server and begins to listen on URL [http://localhost:8000](http://localhost:8000)
 
