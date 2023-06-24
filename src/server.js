@@ -1,5 +1,15 @@
+import fs from 'fs';
+import admin from 'firebase-admin';
 import express from 'express';
 import { db, connectToDb } from './db.js';
+
+// Load Firebase Private keys
+const credentials = JSON.parse(fs.readFileSync('../credentials.json'));
+
+// Setup Firebase Admin for the Firebase project
+admin.initializeApp({
+  credential: admin.credential.cert(credentials),
+});
 
 const app = express();
 app.use(express.json());
